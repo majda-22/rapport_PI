@@ -1,0 +1,94 @@
+\begin{titlepage}
+\newgeometry{top=1.15cm,bottom=1.05cm,left=1.65cm,right=1.65cm}
+\thispagestyle{empty}
+\centering
+
+% ---------------------------------------------------------------------------
+% Variables a personnaliser
+% ---------------------------------------------------------------------------
+\newcommand{\TitrePI}{Conception et Développement d'Une Plateforme Intelligente d’Analyse Financière Basée sur les Données SEC et l’Intelligence Artificielle}
+\newcommand{\DateSoutenance}{\ldots{} / \ldots{} / \ldots{}}
+
+\newcommand{\EtudiantUn}{Majda \textsc{AIT LAMOUDEN}}
+\newcommand{\FiliereUn}{II-BDCC2}
+\newcommand{\EtudiantDeux}{Omaima \textsc{ASSIF}}
+\newcommand{\FiliereDeux}{GLSID2}
+\newcommand{\EtudiantTrois}{Soumia \textsc{ESSADQUI}}
+\newcommand{\FiliereTrois}{GLSID2}
+\newcommand{\EtudiantQuatre}{Hugues Fawzi \textsc{OUEDRAOGO}}
+\newcommand{\FiliereQuatre}{GLSID2}
+
+\newcommand{\EncadrantUn}{Ahriz Souad}
+\newcommand{\EncadrantDeux}{Karjoun Hasan}
+\newcommand{\AnneeUniversitaire}{2025--2026}
+
+% Affiche l'image si elle existe, sinon laisse un cadre reserve.
+\newcommand{\ImageOuCadre}[4]{%
+  \IfFileExists{#1}{%
+    \includegraphics[width=#2,height=#3,keepaspectratio]{#1}%
+  }{%
+    \fbox{%
+      \begin{minipage}[c][#3][c]{#2}
+        \centering\small\color{gray!70}#4
+      \end{minipage}%
+    }%
+  }%
+}
+
+\ImageOuCadre{images/logo_enset.png}{0.72\textwidth}{2.8cm}{Emplacement logo / image}
+
+\vspace{1cm}
+{\large\bfseries D\'epartement Math\'ematiques et Informatique\par}
+
+\vspace{2cm}
+{\Large\bfseries M\'emoire de Projet d'Innovation\par}
+
+
+\vspace{1cm}
+\setlength{\fboxrule}{1.1pt}
+\setlength{\fboxsep}{13pt}
+\fbox{%
+  \begin{minipage}{1\textwidth}
+    \centering
+    {\LARGE\bfseries \TitrePI\par}
+  \end{minipage}%
+}
+
+\vspace{2cm}
+{\large Soutenu le~\DateSoutenance\par}
+
+\vspace{2cm}
+\begin{minipage}[t]{0.45\textwidth}
+  \raggedright
+  {\large\bfseries R\'ealis\'e par :\par}
+  \vspace{0.35cm}
+  \EtudiantUn \quad(\FiliereUn)\par
+  \vspace{0.18cm}
+  \EtudiantDeux  \quad(\FiliereDeux)\par
+  \vspace{0.18cm}
+  \EtudiantTrois \quad(\FiliereTrois)\par
+  \vspace{0.18cm}
+  \EtudiantQuatre \quad(\FiliereQuatre )\par
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.45\textwidth}
+  \raggedright
+  {\large\bfseries Encadr\'e par :\par}
+  \vspace{0.35cm}
+  -- \EncadrantUn\par
+  \vspace{0.18cm}
+  -- \EncadrantDeux\par
+\end{minipage}
+
+\vfill
+{\large\bfseries Ann\'ee Universitaire : \AnneeUniversitaire\par}
+
+\vspace{0.45cm}
+{\footnotesize
+ENSET, Avenue Hassan II -- B.P. 159 -- Mohammedia -- Maroc\par
+05 23 32 22 20 / 05 23 32 35 30 -- Fax : 05 23 32 25 46 -- Site Web : www.enset-media.ac.ma\par
+E-Mail : enset-media@enset-media.ac.ma\par
+}
+
+\restoregeometry
+\end{titlepage}
