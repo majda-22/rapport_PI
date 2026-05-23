@@ -1,0 +1,68 @@
+\chapter*{Conclusion generale}
+\addcontentsline{toc}{chapter}{Conclusion generale}
+
+Ce projet avait pour objectif la conception et le developpement de \textbf{FinPulse},
+une plateforme intelligente d'analyse financiere basee sur les donnees reglementaires
+de la SEC et sur les techniques d'intelligence artificielle. A travers ce travail,
+nous avons cherche a repondre a une problematique centrale : comment aider
+l'investisseur a mieux evaluer la coherence entre une idee d'investissement, le
+discours public d'une entreprise et les risques officiellement declares dans ses
+rapports financiers.
+
+La solution proposee s'appuie sur l'exploitation des rapports 10-K, qui constituent
+une source fiable et officielle pour l'analyse des entreprises cotees. Ces documents,
+bien que riches en informations, sont souvent difficiles a analyser manuellement en
+raison de leur volume, de leur complexite et de leur langage technique. FinPulse
+apporte une reponse a cette difficulte en automatisant l'ingestion, l'extraction, la
+vectorisation et l'analyse semantique des donnees financieres.
+
+Sur le plan fonctionnel, la plateforme integre plusieurs modules complementaires.
+L'assistant d'analyse permet a l'utilisateur de formuler des questions ou des idees
+d'investissement en langage naturel et d'obtenir des reponses argumentees a partir des
+documents officiels. Le moteur de strategie permet de produire une analyse plus
+structuree, en mettant en evidence les preuves, les contradictions et les signaux de
+risque. La surveillance automatisee permet de suivre les strategies sauvegardees et de
+declencher des alertes lorsque des changements significatifs sont detectes. Enfin, la
+watchlist en temps reel offre une vision synthetique de l'evolution des entreprises
+suivies, a travers des indicateurs tels que le score NCI, les variations boursieres,
+les actualites pertinentes et le sentiment shift.
+
+Sur le plan technique, le projet repose sur une architecture moderne, modulaire et
+evolutive. L'utilisation d'Angular pour l'interface utilisateur, de Spring Boot pour
+l'orchestration metier, de Python/FastAPI pour le traitement des donnees et de
+PostgreSQL avec PGVector pour le stockage structure et vectoriel permet de separer
+clairement les responsabilites entre les differents composants. L'integration de Redis
+contribue egalement a ameliorer les performances par la mise en cache des donnees
+frequemment consultees.
+
+Ce travail nous a permis de mettre en pratique plusieurs competences acquises durant
+notre formation, notamment la conception UML, l'architecture logicielle, le
+developpement web, la gestion des bases de donnees, l'integration d'API, ainsi que
+l'utilisation de techniques d'intelligence artificielle appliquees a l'analyse de
+documents. Il a egalement mis en evidence l'importance de la qualite des donnees, de
+la tracabilite des resultats et de la securite dans le developpement d'une plateforme
+d'aide a la decision.
+
+Malgre les apports de la solution, certaines limites peuvent etre relevees. Le systeme
+depend de la qualite et de la disponibilite des sources externes, notamment les
+documents SEC, les donnees de marche et les actualites financieres. De plus,
+l'interpretation automatique des documents financiers reste un domaine complexe, ou la
+precision des resultats depend fortement des modeles utilises, des prompts definis et
+de la qualite des donnees d'apprentissage ou de reference. Une validation humaine peut
+donc rester necessaire pour les decisions financieres sensibles.
+
+Plusieurs perspectives d'amelioration peuvent etre envisagees. Il serait possible
+d'etendre la plateforme a d'autres types de documents reglementaires, comme les
+rapports 10-Q ou les formulaires 8-K, afin d'enrichir l'analyse. L'ajout de nouveaux
+modeles de prediction, de tableaux de bord plus avances, d'indicateurs sectoriels et
+d'un systeme de recommandation personnalise permettrait egalement d'ameliorer la
+valeur analytique de la solution. Enfin, une phase de tests a plus grande echelle
+pourrait permettre d'evaluer la robustesse, la performance et la pertinence des
+analyses produites.
+
+En conclusion, FinPulse constitue une base solide pour une plateforme d'aide a la
+decision financiere intelligente, explicable et evolutive. En combinant les donnees
+officielles, les architectures modernes et l'intelligence artificielle, le projet
+montre comment les technologies actuelles peuvent contribuer a rendre l'analyse
+financiere plus accessible, plus transparente et mieux adaptee aux besoins des
+investisseurs.

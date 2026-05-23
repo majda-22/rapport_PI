@@ -1,0 +1,30 @@
+\chapter*{Resume}
+\addcontentsline{toc}{chapter}{Resume}
+
+Ce projet porte sur la conception et le developpement de \textbf{FinPulse}, une
+plateforme intelligente d'analyse financiere destinee a accompagner les investisseurs
+dans l'evaluation de leurs decisions. La solution exploite les rapports reglementaires
+10-K publies par les entreprises aupres de la SEC afin de comparer les arguments
+d'investissement avec les risques et informations officiellement declares.
+
+FinPulse s'appuie sur un pipeline d'ingestion de donnees, une base PostgreSQL enrichie
+par l'extension PGVector, des embeddings textuels et un mecanisme RAG permettant de
+retrouver les passages pertinents des documents financiers. La plateforme integre
+egalement un score de coherence, appele NCI, qui aide a mesurer le niveau de risque et
+la coherence entre le discours de l'entreprise, les donnees reglementaires et la
+strategie de l'utilisateur.
+
+La solution propose trois fonctionnalites principales : un chatbot d'analyse capable
+de repondre aux questions financieres et de generer des rapports de strategie, un
+module de surveillance automatisee des strategies sauvegardees, et une watchlist en
+temps reel affichant les variations boursieres, les alertes, le sentiment shift et
+l'evolution du score NCI. L'architecture retenue combine Angular pour l'interface,
+Spring Boot pour l'orchestration metier, FastAPI/Python pour le traitement des donnees
+et PostgreSQL, PGVector et Redis pour la persistance et la performance.
+
+Ce travail met ainsi en place une base technique et fonctionnelle pour une plateforme
+d'aide a la decision financiere plus fiable, explicable et personnalisee, fondee sur
+des sources officielles et sur l'intelligence artificielle.
+
+\textbf{Mots cles :} FinPulse, analyse financiere, intelligence artificielle, SEC,
+rapport 10-K, RAG, PGVector, NCI, Spring Boot, Angular.

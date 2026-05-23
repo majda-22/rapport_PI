@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.13)  14 MAY 2026 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.13)  22 MAY 2026 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,7 +199,25 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks21
 
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen169
+\ar@mcellbox=\box53
+\extrarowheight=\dimen170
+\NC@list=\toks22
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box54
+)
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count296
+\float@exts=\toks23
+\float@box=\box55
+\@float@everytoks=\toks24
+\@floatcapt=\box56
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
 .
 
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -208,42 +226,42 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex
 .def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
+\l__color_backend_stack_int=\count297
 ) (main.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 8.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Info: Redefining \degres on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Info: Redefining \degres on input line 13.
 
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen169
-\scratchbox=\box53
-\nofMPsegments=\count298
-\nofMParguments=\count299
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen170
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count298
+\scratchdimen=\dimen171
+\scratchbox=\box57
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen172
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks26
 )
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base
 .sty
@@ -366,30 +384,202 @@ Overfull \hbox (28.20001pt too wide) in paragraph at lines 55--56
 
 {C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/pc/AppD
 ata/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./images/logo_enset.pn
-g>]) (Remerciement.tex) (Resume.tex) (Introduction.tex) [1
+g>]) (Remerciement.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
 
 
-] (main.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 7--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
+
+ []
+
+) (resume.tex [1
+
+
+]) (Abstart.tex [2
+
+]) (Introduction.tex [3
+
+] [4
+
+])
+(sections/Presentation.tex [5]
+Chapitre 1.
+[6
+
+] [7]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 100.
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+\T1/lmr/m/n/8 siers, ac-tua-lites fi-nan-cieres,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+\T1/lmr/m/n/8 gra-phiques, don-nees fon-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+\T1/lmr/m/n/8 da-men-tales et in-for-ma-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+[]|\T1/lmr/m/n/8 Suivi simple des ac-tions,
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 119--120
+\T1/lmr/m/n/8 marche, scripts per-son-na-lises
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+[]|\T1/lmr/m/n/8 Acces pro-fes-sion-nel a des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+\T1/lmr/m/n/8 pletes, ac-tua-lites, ana-lyses,
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 154--155
+[]|\T1/lmr/m/n/8 Articles d'ana-lyse, opi-nions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+\T1/lmr/m/n/8 d'ex-perts, ac-tua-lites fi-nan-
+ []
+
+[8] [9] [10]) (sections/Conception.tex [11]
+Chapitre 2.
+[12
+
+]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+9.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+[13{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}
+]
+Overfull \hbox (14.90474pt too wide) in paragraph at lines 88--92
+[]\T1/lmr/bx/n/12 Détection de chan-ge-ments si-gni-fi-ca-tifs \T1/lmr/m/n/12 :
+ Une tâche pla-ni-fiée (\T1/lmtt/m/n/12 @Scheduled\T1/lmr/m/n/12 )
+ []
+
+[14{C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/
+Users/pc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+[15]
+<images/usecase_finpulse.pdf, id=68, 794.97pt x 615.25856pt>
+File: images/usecase_finpulse.pdf Graphic file (type pdf)
+<use images/usecase_finpulse.pdf>
+Package pdftex.def Info: images/usecase_finpulse.pdf  used on input line 187.
+(pdftex.def)             Requested size: 418.25368pt x 323.7103pt.
+ [16] [17 <./images/usecase_finpulse.pdf>]
+Overfull \hbox (35.21385pt too wide) in paragraph at lines 212--213
+[]\T1/lmtt/m/n/12 XBRLFact \T1/lmr/m/n/12 : faits fi-nan-ciers struc-tu-rés (co
+ncept, va-leur, pé-riode, fis-cal year/quarter). 
+ []
+
+
+Overfull \hbox (2.4435pt too wide) in paragraph at lines 213--214
+[]\T1/lmtt/m/n/12 InsiderTransaction \T1/lmr/m/n/12 : tran-sac-tions des ini-ti
+és (di-ri-geants, ad-mi-nis-tra-teurs). 
+ []
+
+
+Overfull \hbox (35.25586pt too wide) in paragraph at lines 225--226
+ \T1/lmr/bx/n/12 5. Ser-vices d'ac-cès aux don-nées[] \T1/lmr/m/n/12 Les classe
+s \T1/lmtt/m/n/12 GetTimeSeriesConcept \T1/lmr/m/n/12 et \T1/lmtt/m/n/12 GetXBR
+LFact
+ []
+
+
+
+pdfTeX warning: pdflatex (file ./images/FinPulse12.pdf): PDF inclusion: found P
+DF version <1.7>, but at most version <1.5> allowed
+<images/FinPulse12.pdf, id=127, 794.97pt x 615.25862pt>
+File: images/FinPulse12.pdf Graphic file (type pdf)
+<use images/FinPulse12.pdf>
+Package pdftex.def Info: images/FinPulse12.pdf  used on input line 229.
+(pdftex.def)             Requested size: 418.25368pt x 323.71033pt.
+[18] [19 <./images/FinPulse12.pdf>]
+<images/sequenceeee.png, id=179, 2173.11874pt x 1161.33875pt>
+File: images/sequenceeee.png Graphic file (type png)
+<use images/sequenceeee.png>
+Package pdftex.def Info: images/sequenceeee.png  used on input line 240.
+(pdftex.def)             Requested size: 418.25368pt x 223.50966pt.
+ [20 <./images/sequenceeee.png (PNG copy)>]
+[21]
+Overfull \hbox (39.72923pt too wide) in paragraph at lines 272--273
+[]\T1/lmr/m/n/12 FinPulse in-tègre deux briques lo-gi-cielles com-plé-men-taire
+s en ar-chi-tec-ture microservices-
+ []
+
+<images/thisoneeeee.png, id=186, 1413.28pt x 770.88pt>
+File: images/thisoneeeee.png Graphic file (type png)
+<use images/thisoneeeee.png>
+Package pdftex.def Info: images/thisoneeeee.png  used on input line 314.
+(pdftex.def)             Requested size: 418.25368pt x 228.13692pt.
+[22] [23 <./images/thisoneeeee.png>]
+Overfull \hbox (1.9147pt too wide) in paragraph at lines 352--353
+[]\T1/lmr/bx/n/12 Async Pro-ces-sing (Ce-lery) \T1/lmr/m/n/12 : In-ges-tion non
+-bloquante et trai-te-ment batch
+ []
+
+
+Overfull \hbox (10.13152pt too wide) in paragraph at lines 354--355
+[]\T1/lmr/bx/n/12 Connection Poo-ling \T1/lmr/m/n/12 : Post-greSQL et Re-dis ut
+i-lisent des pools de connexions
+ []
+
+[24]) (Conclusion.tex [25] [26
+
+]) [27] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4714 strings out of 467871
- 80501 string characters out of 5419828
- 499168 words of memory out of 5000000
- 33536 multiletter control sequences out of 15000+600000
- 672628 words of font info for 63 fonts, out of 8000000 for 9000
+ 5002 strings out of 467871
+ 85978 string characters out of 5419828
+ 514224 words of memory out of 5000000
+ 33790 multiletter control sequences out of 15000+600000
+ 689774 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,206b,385s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,864b,385s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><
-C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:
-/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Use
-rs/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on main.pdf (2 pages, 132571 bytes).
+C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/U
+sers/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Use
+rs/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/
+pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/pc/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/pc/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/pc/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/pc/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/pc/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/pc/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/pc/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (28 pages, 2079287 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 266 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

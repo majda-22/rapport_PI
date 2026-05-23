@@ -1,0 +1,294 @@
+% !TEX root = ../main.tex
+
+\chapter{Presentation du projet}
+
+\section{Contexte general du projet}
+
+Le domaine financier connait une evolution importante grace a la transformation
+numerique, a l'exploitation massive des donnees et aux avancees de l'intelligence
+artificielle. Les investisseurs, qu'ils soient particuliers ou professionnels, sont
+aujourd'hui confrontes a une quantite tres importante d'informations provenant de
+sources variees : rapports financiers, donnees de marche, actualites economiques,
+communiques d'entreprises et documents reglementaires.
+
+Malgre cette richesse informationnelle, la prise de decision reste complexe. Les
+donnees sont souvent dispersees, difficiles a analyser rapidement et parfois
+contradictoires. En particulier, il peut exister un ecart entre le discours public ou
+marketing d'une entreprise et les risques reellement mentionnes dans ses documents
+officiels. Les rapports 10-K publies aupres de la SEC representent une source fiable
+pour identifier ces risques, mais leur exploitation manuelle demande beaucoup de temps
+et de competences techniques.
+
+Dans ce contexte, l'utilisation de l'intelligence artificielle permet d'automatiser
+l'analyse des documents financiers, de detecter les signaux faibles et d'aider les
+investisseurs a prendre des decisions plus argumentees. C'est dans cette perspective
+que s'inscrit le projet \textbf{FinPulse}.
+
+\section{Presentation du projet}
+
+FinPulse est une plateforme intelligente d'analyse financiere basee sur les donnees
+SEC et l'intelligence artificielle. Elle vise a accompagner l'investisseur dans
+l'evaluation de ses idees d'investissement en s'appuyant sur des sources officielles,
+notamment les rapports 10-K des entreprises cotees.
+
+La plateforme combine plusieurs modules : un pipeline d'ingestion des donnees
+financieres, une base de donnees vectorielle, un assistant conversationnel, un moteur
+de strategie, un systeme de surveillance automatisee et une watchlist en temps reel.
+L'objectif est de transformer des documents financiers complexes en informations
+exploitables, contextualisees et faciles a interpreter.
+
+\subsection{Problematique}
+
+Les investisseurs prennent souvent leurs decisions a partir d'informations publiques,
+d'actualites recentes ou d'arguments strategiques personnels. Cependant, ces elements
+ne suffisent pas toujours a mesurer la coherence d'une decision d'investissement.
+Plusieurs difficultes se posent :
+
+\begin{itemize}
+    \item les rapports financiers officiels sont longs, techniques et difficiles a
+    analyser manuellement ;
+    \item les risques importants peuvent etre caches dans des sections detaillees des
+    rapports 10-K ;
+    \item le discours marketing d'une entreprise peut ne pas refleter totalement sa
+    situation reglementaire ;
+    \item les investisseurs ont besoin d'indicateurs clairs pour comparer les preuves,
+    les contradictions et les signaux de risque ;
+    \item le suivi continu des entreprises et des strategies demande une automatisation
+    fiable.
+\end{itemize}
+
+La problematique principale du projet peut donc etre formulee ainsi :
+\textit{comment concevoir une plateforme intelligente capable d'analyser les donnees
+financieres officielles, d'evaluer la coherence d'une strategie d'investissement et
+d'aider l'utilisateur a suivre les risques en temps reel ?}
+
+\subsection{Objectifs du projet}
+
+Le projet FinPulse poursuit plusieurs objectifs fonctionnels et techniques :
+
+\begin{itemize}
+    \item collecter et exploiter les rapports reglementaires publies par les entreprises
+    aupres de la SEC ;
+    \item extraire les sections importantes, notamment les risques et les analyses
+    financieres ;
+    \item utiliser des mecanismes d'intelligence artificielle pour rechercher les
+    informations pertinentes dans les documents ;
+    \item proposer un assistant conversationnel capable de repondre aux questions de
+    l'utilisateur avec des preuves issues des rapports officiels ;
+    \item calculer un score de coherence, appele NCI, pour evaluer le niveau de risque
+    et la coherence d'une strategie ;
+    \item permettre la sauvegarde et la surveillance automatique des strategies
+    d'investissement ;
+    \item fournir une watchlist en temps reel avec des indicateurs de marche, de
+    sentiment et de risque ;
+    \item garantir une architecture maintenable, securisee et evolutive.
+\end{itemize}
+
+\subsection{Etude de l'existant}
+
+Afin de mieux positionner FinPulse, nous avons etudie plusieurs solutions existantes
+utilisees dans le domaine de l'analyse financiere, de la consultation de donnees de
+marche et de l'aide a la decision. Le tableau suivant presente quelques exemples
+representatifs ainsi que leurs principales limites par rapport aux besoins identifies
+dans notre projet.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{3cm}|p{4cm}|p{6cm}|}
+\hline
+\textbf{Solution existante} & \textbf{Fonctionnalites principales} & \textbf{Limites observees} \\
+\hline
+Yahoo Finance &
+Consultation des cours boursiers, actualites financieres, graphiques, donnees
+fondamentales et informations generales sur les entreprises. &
+L'outil reste principalement descriptif. Il fournit des donnees de marche et des
+actualites, mais ne permet pas d'analyser automatiquement la coherence entre une
+strategie d'investissement et les risques declares dans les rapports 10-K. \\
+\hline
+Google Finance &
+Suivi simple des actions, consultation des prix, evolution historique et informations
+de base sur les societes cotees. &
+La plateforme offre une vision synthetique mais limitee. Elle ne propose pas
+d'analyse approfondie des documents reglementaires, ni de score de risque
+personnalise, ni de justification basee sur des sources officielles. \\
+\hline
+TradingView &
+Analyse graphique avancee, indicateurs techniques, alertes de marche, scripts
+personnalises et visualisation temps reel. &
+La solution est tres orientee analyse technique. Elle ne se concentre pas sur
+l'exploitation semantique des rapports SEC et ne detecte pas les contradictions entre
+le discours d'une entreprise et ses risques reglementaires. \\
+\hline
+Bloomberg Terminal &
+Acces professionnel a des donnees financieres tres completes, actualites, analyses,
+indicateurs de marche et outils de suivi institutionnels. &
+La solution est couteuse et destinee principalement aux professionnels. Elle reste
+complexe pour un utilisateur non expert et ne fournit pas forcement une analyse RAG
+personnalisee a partir d'une idee d'investissement formulee en langage naturel. \\
+\hline
+\end{tabular}
+\caption{Comparaison de solutions existantes orientees marche et analyse}
+\label{tab:etude-existant-marche}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{|p{3cm}|p{4cm}|p{6cm}|}
+\hline
+\textbf{Solution existante} & \textbf{Fonctionnalites principales} & \textbf{Limites observees} \\
+\hline
+EDGAR SEC &
+Acces officiel aux rapports financiers et documents reglementaires des entreprises
+cotees aux Etats-Unis. &
+La plateforme est fiable mais peu assistee. Les rapports sont disponibles sous forme
+de documents longs et techniques, ce qui rend leur analyse manuelle difficile et
+chronophage pour l'investisseur. \\
+\hline
+Seeking Alpha &
+Articles d'analyse, opinions d'experts, actualites financieres, notations et
+commentaires sur les entreprises. &
+Le contenu depend fortement des analystes et contributeurs. Les analyses ne sont pas
+toujours directement reliees aux sections exactes des documents SEC et peuvent
+contenir une part d'opinion subjective. \\
+\hline
+MarketWatch &
+Actualites financieres, suivi des marches, informations economiques et donnees
+boursieres generales. &
+La plateforme est utile pour suivre l'actualite, mais elle ne propose pas de moteur
+d'analyse personnalise capable de surveiller une strategie et de declencher des
+alertes basees sur l'evolution du score de coherence. \\
+\hline
+\end{tabular}
+\caption{Comparaison de solutions existantes orientees documents et actualites}
+\label{tab:etude-existant-documents}
+\end{table}
+
+D'apres cette comparaison, les solutions existantes repondent chacune a une partie du
+besoin : consultation des cours, analyse technique, acces aux documents officiels ou
+lecture d'actualites. Cependant, elles ne combinent pas dans un meme outil l'analyse
+semantique des rapports SEC, la recherche augmentee par generation, le calcul d'un
+score de coherence, la personnalisation selon la strategie de l'utilisateur et la
+surveillance en temps reel. C'est cette complementarite que FinPulse cherche a
+apporter.
+
+\subsection{Solution proposee}
+
+La solution proposee est une plateforme nommee \textbf{FinPulse}. Elle repose sur une
+architecture moderne composee d'une interface web, d'un backend d'orchestration, d'un
+service d'intelligence artificielle et d'une base de donnees centralisee.
+
+FinPulse permet a l'utilisateur de soumettre une idee ou une strategie
+d'investissement en langage naturel. Le systeme analyse cette demande, recherche les
+informations pertinentes dans les rapports 10-K, calcule un score de coherence et
+genere une reponse argumentee. Lorsque l'utilisateur souhaite suivre une entreprise,
+la plateforme peut sauvegarder la strategie et declencher des alertes en cas de
+variation significative du risque ou d'apparition de nouveaux signaux critiques.
+
+La solution integre egalement une watchlist dynamique permettant de suivre les
+entreprises favorites, les variations de marche, les actualites pertinentes et
+l'evolution du score NCI.
+
+\section{Methodologie et demarche suivie}
+
+\subsection{Approche methodologique}
+
+La realisation du projet a suivi une demarche progressive, allant de l'analyse du
+besoin jusqu'a la conception technique de la solution. Cette approche a permis de
+structurer le travail en plusieurs etapes :
+
+\begin{enumerate}
+    \item analyse du contexte et identification de la problematique ;
+    \item definition des besoins fonctionnels et non fonctionnels ;
+    \item etude des solutions existantes et identification de leurs limites ;
+    \item conception de l'architecture globale de la plateforme ;
+    \item modelisation UML des cas d'utilisation, des classes et des interactions ;
+    \item choix des technologies adaptees au projet ;
+    \item planification des modules a developper et repartition des responsabilites.
+\end{enumerate}
+
+Cette demarche permet de garantir une meilleure maitrise du projet et de reduire les
+risques techniques lors de l'implementation.
+
+\subsection{Outils de developpement et de communication}
+
+Plusieurs outils ont ete utilises pour organiser, developper et suivre le projet :
+
+\begin{itemize}
+    \item \textbf{Visual Studio Code} et \textbf{IntelliJ IDEA} pour le developpement ;
+    \item \textbf{Git} et \textbf{GitHub} pour la gestion du code source et le travail
+    collaboratif ;
+    \item \textbf{Spring Boot} pour le backend et l'orchestration metier ;
+    \item \textbf{Angular} pour le developpement de l'interface utilisateur ;
+    \item \textbf{Python} et \textbf{FastAPI} pour le traitement des donnees et les
+    services d'intelligence artificielle ;
+    \item \textbf{PostgreSQL} et \textbf{PGVector} pour la persistance des donnees et le
+    stockage vectoriel ;
+    \item \textbf{Redis} pour le cache et l'amelioration des performances ;
+    \item \textbf{Docker} pour la containerisation des services ;
+    \item des outils de communication et de suivi tels que Google Meet, WhatsApp et
+    Trello.
+\end{itemize}
+
+\section{Organisation et planification du projet}
+
+\subsection{Equipe du projet}
+
+Le projet a ete realise par une equipe composee de quatre membres. La repartition des
+taches a ete faite selon les competences et les responsabilites de chacun, afin de
+couvrir les differents aspects du projet : ingestion des donnees, intelligence
+artificielle, backend, frontend, base de donnees, conception UML et redaction du
+rapport.
+
+Cette organisation a permis de travailler en parallele sur plusieurs modules tout en
+assurant une coordination reguliere entre les membres de l'equipe. Les reunions de
+suivi ont permis de discuter de l'avancement, de resoudre les difficultes techniques
+et d'ajuster les priorites.
+
+\subsection{Deroulement du projet}
+
+Le deroulement du projet peut etre divise en plusieurs phases principales :
+
+\begin{itemize}
+    \item \textbf{Phase d'analyse} : comprehension du sujet, definition du besoin et
+    formulation de la problematique ;
+    \item \textbf{Phase de conception} : elaboration des diagrammes UML, definition de
+    l'architecture et choix des technologies ;
+    \item \textbf{Phase de developpement} : implementation des differents modules de la
+    plateforme ;
+    \item \textbf{Phase d'integration} : connexion entre le frontend, le backend, les
+    services d'IA et la base de donnees ;
+    \item \textbf{Phase de test} : verification du bon fonctionnement des
+    fonctionnalites principales ;
+    \item \textbf{Phase de documentation} : redaction du rapport et preparation de la
+    presentation finale.
+\end{itemize}
+
+\section{Impact attendu}
+
+FinPulse vise a apporter une valeur ajoutee importante dans le domaine de l'aide a la
+decision financiere. La plateforme permet de reduire le temps necessaire a l'analyse
+des documents reglementaires, d'ameliorer la comprehension des risques et de fournir
+des recommandations plus transparentes grace a la citation des sources officielles.
+
+L'impact attendu concerne aussi bien l'utilisateur final que l'aspect technique. Pour
+l'investisseur, FinPulse offre un outil d'analyse plus clair, plus rapide et plus
+personnalise. Sur le plan technique, le projet demontre l'interet de combiner les
+architectures modernes, les bases vectorielles et les modeles d'intelligence
+artificielle pour exploiter des donnees financieres complexes.
+
+\section{Conclusion}
+
+Ce chapitre a presente le cadre general du projet FinPulse, sa problematique, ses
+objectifs, l'etude de l'existant ainsi que la solution proposee. Il a egalement decrit
+la methodologie adoptee, les outils utilises, l'organisation de l'equipe et l'impact
+attendu de la plateforme.
+
+Cette presentation constitue une base pour la suite du rapport, qui detaille la
+conception fonctionnelle et technique de FinPulse, ainsi que les choix architecturaux
+retenus pour repondre aux besoins identifies.

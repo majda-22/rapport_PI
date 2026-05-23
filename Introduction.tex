@@ -1,0 +1,52 @@
+\chapter*{Introduction generale}
+\addcontentsline{toc}{chapter}{Introduction generale}
+
+Le secteur financier connait aujourd'hui une transformation profonde sous l'effet de
+la disponibilite massive des donnees, de l'automatisation des traitements et des
+progres rapides de l'intelligence artificielle. Les investisseurs disposent d'un
+volume important d'informations issues des marches, de l'actualite economique et des
+documents reglementaires publies par les entreprises. Cependant, cette abondance ne
+garantit pas toujours une meilleure prise de decision : les informations sont souvent
+dispersees, difficiles a comparer et parfois marquees par un ecart entre le discours
+promotionnel des entreprises et les risques officiellement declares.
+
+Dans ce contexte, les rapports financiers deposes aupres de la SEC, notamment les
+rapports annuels 10-K, constituent une source fiable et structuree pour analyser la
+situation reelle des societes cotees. Ces documents contiennent des informations
+essentielles sur les risques, les performances, les perspectives et la gouvernance des
+entreprises. Leur exploitation manuelle reste toutefois complexe en raison de leur
+taille, de leur langage technique et du temps necessaire pour identifier les signaux
+pertinents. Il devient donc necessaire de concevoir des outils capables de traiter ces
+donnees automatiquement et de les transformer en indicateurs exploitables.
+
+Le present projet, intitule \textbf{FinPulse}, s'inscrit dans cette problematique. Il
+vise la conception et le developpement d'une plateforme intelligente d'analyse
+financiere basee sur les donnees SEC et l'intelligence artificielle. La solution
+proposee combine un pipeline d'ingestion de donnees, une base vectorielle, des
+mecanismes de recherche augmentee par generation (RAG), un score de coherence appele
+\textbf{NCI} et une interface interactive permettant a l'utilisateur d'analyser des
+idees d'investissement, de suivre des entreprises et de recevoir des alertes
+contextualisees.
+
+L'objectif principal de FinPulse est d'aider l'investisseur a evaluer la coherence
+entre une hypothese d'investissement, le discours public d'une entreprise et les
+elements reglementaires contenus dans ses rapports officiels. La plateforme permet
+ainsi d'interroger un assistant d'analyse, de generer des rapports de strategie,
+d'enregistrer des strategies a surveiller et de suivre une watchlist en temps reel
+grace a des indicateurs financiers, textuels et comportementaux.
+
+Sur le plan technique, le systeme repose sur une architecture en couches et une
+organisation orientee services. L'interface utilisateur est developpee avec Angular,
+la logique metier est assuree par un backend Spring Boot, tandis que le traitement des
+donnees et des modeles d'intelligence artificielle est pris en charge par un service
+Python/FastAPI. La persistance s'appuie sur PostgreSQL et PGVector pour stocker les
+donnees structurees ainsi que les embeddings, avec Redis pour l'optimisation des
+performances et la gestion du cache.
+
+Ce rapport presente les differentes etapes de realisation du projet. Il introduit
+d'abord le contexte general et les objectifs de la solution, puis detaille la
+conception fonctionnelle et technique du systeme, notamment les besoins, les
+diagrammes UML, l'architecture logicielle et les choix technologiques retenus. Enfin,
+il met en evidence l'apport de FinPulse comme outil d'aide a la decision financiere,
+en insistant sur la fiabilite des sources, la tracabilite des analyses et la
+personnalisation des resultats selon le profil de l'utilisateur.
