@@ -1,0 +1,238 @@
+\chapter{Implémentation et Réalisation}
+
+
+\section{Introduction}
+
+Ce chapitre constitue le cœur opérationnel du présent rapport. Après avoir défini, dans les chapitres précédents, le cadre conceptuel et l'architecture fonctionnelle de FinPulse AI, nous abordons ici la dimension concrète de la réalisation de la solution développée.
+
+Le présent chapitre s'organise en deux parties principales. La première présente l'environnement technique et justifie les choix effectués. La deuxième propose une présentation détaillée des interfaces et des fonctionnalités offertes à l'utilisateur final, illustrée par des captures d'écran annotées.
+
+\section{Environnement Technique et Choix Technologiques}
+
+La conception de FinPulse AI repose sur une  architecture dans laquelle chaque couche technologique est sélectionnée en fonction de sa capacité à répondre précisément aux exigences fonctionnelles et non fonctionnelles de la couche concernée. Cette section détaille les choix effectués pour chacun des cinq environnements constitutifs du système.
+
+\subsection{Environnement Frontend}
+
+\textbf{Angular 19}
+
+L'interface utilisateur de FinPulse AI est développée en Angular 19. Ce choix s'est imposé pour plusieurs raisons structurantes. Angular offre un cadre applicatif complet — routing, gestion des formulaires, injection de dépendances, modularité — qui convient particulièrement à une application de la complexité de FinPulse AI, laquelle compte plus d'une dizaine de pages fonctionnelles interconnectées. Par ailleurs, Angular 19 introduit le mécanisme des Signals, une primitive réactive qui permet de gérer l'état de l'interface de manière fine et performante, en limitant les re-rendus inutiles. Dans FinPulse AI, les Signals sont utilisés de manière systématique pour gérer les états locaux des composants — données de la watchlist, scores NCI en temps réel, état des sessions du chatbot — ce qui garantit une réactivité optimale même sous forte charge de données.
+
+\textbf{CSS}
+
+L'ensemble de l'interface est stylisé en CSS natif organisé selon une architecture de variables CSS globales, qui permet à la plateforme de supporter deux thèmes visuels — un thème sombre (dark finance) et un thème clair (light finance) — basculables dynamiquement en session. Il garantit une charte graphique cohérente, un design épuré inspiré des plateformes fintech et une parfaite adaptation responsive sur tous les types d'écrans.
+
+\textbf{Chart.js}
+
+La visualisation de données financières est assurée par Chart.js, une bibliothèque de graphiques JavaScript légère et hautement configurable. Dans FinPulse AI, Chart.js est utilisé pour afficher l'historique du NCI sous forme de courbes temporelles interactives sur la page watchlist et la page Company Dashboard, ainsi que pour le mini-dashboard animé de la landing page.
+
+\textbf{SSE}
+
+Enfin, les communications temps réel entre le frontend et le backend sont assurées par le protocole SSE (Server-Sent Events). Ce mécanisme unidirectionnel — du serveur vers le client — est parfaitement adapté au cas d'usage de FinPulse AI : la mise à jour continue de la watchlist avec les scores NCI recalculés et les alertes dynamiques.
+
+\subsection{Environnement Backend et Orchestration IA}
+
+\textbf{Spring Boot 4.0.6}
+
+Le backend de FinPulse AI est développé avec Spring Boot, le framework Java de référence pour le développement d'APIs RESTful d'entreprise. Spring Boot joue ici un rôle central d'orchestrateur : il expose l'ensemble des endpoints REST consommés par le frontend, sécurise les accès utilisateurs, gère la logique métier, et coordonne les appels vers les différents services internes — pipeline IA Python, moteur de recommandations, système de notifications.
+
+La sécurité des APIs est assurée par Spring Security, configuré en mode resource server OAuth2/OIDC. Chaque requête entrante est interceptée et le JWT Keycloak associé est validé cryptographiquement.
+
+\textbf{Spring AI}
+
+L'intégration du LLM dans le backend est réalisée via Spring AI, une abstraction de haut niveau pour les interactions avec les modèles de langage. Dans FinPulse AI, Spring AI est configuré pour utiliser Mistral comme modèle de langage.
+
+\textbf{iText}
+
+La génération des rapports PDF est ensuite assurée par la bibliothèque iText.
+
+\textbf{Spring Cache}
+
+Les performances du backend sont optimisées par Spring Cache, une abstraction de cache applicatif configurée en mode cache-aside avec Redis.
+
+\subsection{Pipeline de Données et Intelligence Artificielle}
+
+\textbf{Python}
+
+Le pipeline d'intelligence artificielle de FinPulse AI constitue le composant le plus complexe de l'architecture.
+
+\textbf{FastAPI et Uvicorn}
+
+L'API d'ingestion du pipeline est exposée via FastAPI.
+
+\textbf{Transformers (Hugging Face)}
+
+Le modèle FinBERT constitue le cœur de l'analyse de sentiment.
+
+\textbf{PyTorch}
+
+L'exécution du modèle d’intelligence artificielle est pilotée via PyTorch.
+
+\textbf{NumPy}
+
+NumPy est utilisé pour les calculs mathématiques.
+
+\textbf{BeautifulSoup4 et lxml}
+
+L'extraction des données SEC est réalisée par BeautifulSoup4 et lxml.
+
+\textbf{Celery}
+
+L'orchestration des tâches batch est confiée à Celery.
+
+\textbf{SQLAlchemy et Alembic}
+
+La gestion des entités est assurée par SQLAlchemy et Alembic.
+
+\subsection{Persistance des Données et Stockage Vectoriel}
+
+\textbf{PostgreSQL}
+
+L'ensemble des données persistantes est stocké dans PostgreSQL.
+
+\textbf{PGVector}
+
+PGVector est une extension PostgreSQL qui permet le stockage vectoriel.
+
+\textbf{Redis}
+
+Redis complète l'infrastructure de persistance.
+
+\subsection{Sécurité, Identité et Infrastructure}
+
+\textbf{Keycloak}
+
+La sécurité de FinPulse AI est entièrement déléguée à Keycloak.
+
+\textbf{Docker Compose}
+
+Toute l'infrastructure est conteneurisée via Docker Compose.
+
+\textbf{Visual Studio Code, IntelliJ IDEA}
+
+Les outils utilisés sont IntelliJ IDEA et Visual Studio Code.
+
+\textbf{Git et GitHub}
+
+La gestion du code source est assurée par Git et GitHub.
+
+\section{Étapes de Réalisation du Système}
+
+\subsection{Présentation Générale}
+
+Le développement de FinPulse AI a suivi une approche incrémentale.
+
+\subsection{Présentation des Interfaces et Fonctionnalités}
+
+Cette section décrit les interfaces utilisateur de FinPulse AI.
+
+\subsubsection{Landing Page}
+
+La landing page constitue le premier point de contact de FinPulse AI.
+
+[Insérer Figure 3 : Landing page FinPulse AI — Section héro avec mini-dashboard Chart.js]
+
+Figure 3 – Landing page avec disposition asymétrique et dashboard de démonstration
+
+[Insérer Figure 4 : Landing page FinPulse AI — Section AI Agent avec présentation des deux modes]
+
+Figure 4 – Présentation des modes Agent et Strategy de l'IA
+
+\subsubsection{Authentification — Inscription et Connexion}
+
+La gestion des identités est assurée par Keycloak.
+
+[Insérer Figure 2 : Page de connexion Keycloak personnalisée FinPulse AI]
+
+Figure 2 – Interface de connexion sécurisée via Keycloak OIDC
+
+\subsubsection{Dashboard Principal}
+
+Après authentification, l'utilisateur est redirigé vers le dashboard principal.
+
+[Insérer Figure 5 : Dashboard principal FinPulse AI — Vue synthétique personnalisée]
+
+Figure 5 – Hub central avec news, insights et accès aux fonctionnalités principales
+
+\subsubsection{Page Discover}
+
+La page Discover est l'une des pages les plus riches.
+
+Lors du premier login, l’utilisateur suit un onboarding en 3 étapes.
+
+Pour un utilisateur avancé, la page affiche le mode Explore.
+
+[Insérer Figure 6]
+
+Figure 6 – Onboarding
+
+[Insérer Figure 7]
+
+Figure 7 – Explore
+
+\subsubsection{Watchlist — Suivi Temps Réel}
+
+La page Watchlist est structurée en trois colonnes.
+
+[Insérer Figure 8]
+
+Figure 8 – Watchlist temps réel
+
+\subsubsection{Company Dashboard}
+
+La page Company Dashboard centralise une analyse complète.
+
+[Insérer Figure 9]
+
+Figure 9 – Company Dashboard
+
+\subsubsection{Agent IA}
+
+La page AI Agent est l’interface la plus avancée.
+
+[Insérer Figure 10]
+
+Figure 10 – Strategy Card
+
+[Insérer Figure 11]
+
+Figure 11 – Historique chatbot
+
+\subsubsection{My Strategies}
+
+La page My Strategies centralise toutes les stratégies.
+
+[Insérer Figure 12]
+
+Figure 12 – Strategies
+
+\subsubsection{Notifications}
+
+La page Notifications regroupe toutes les alertes.
+
+[Insérer Figure 13]
+
+Figure 13 – Notifications
+
+\subsubsection{Page Profil}
+
+La page Profil permet à l’utilisateur de gérer son compte.
+
+[Insérer Figure 14]
+
+Figure 14 – Security
+
+[Insérer Figure 15]
+
+Figure 15 – Preferences
+
+\section{Conclusion}
+
+Ce chapitre a présenté de manière exhaustive la réalisation concrète de FinPulse AI.
+
+La stack technologique de FinPulse AI n'est pas le résultat de choix arbitraires.
+
+Sur le plan des interfaces, FinPulse AI combine analyse financière avancée et expérience utilisateur fluide.
+
+Le design system basé sur CSS variables, le temps réel via Angular Signals et SSE, ainsi que l’agent IA RAG enrichi, assurent cohérence, réactivité et richesse fonctionnelle.
+
+L’ensemble positionne la plateforme comme une solution fintech moderne et professionnelle.

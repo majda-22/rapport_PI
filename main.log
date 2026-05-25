@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.13)  22 MAY 2026 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.13)  24 MAY 2026 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -217,7 +217,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks24
 \@floatcapt=\box56
 )
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 13
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 14
 .
 
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
@@ -233,21 +237,21 @@ Package babel Info: 'french' activates 'french' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Info: Redefining \degres on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Info: Redefining \degres on input line 14.
 
 (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -512,59 +516,102 @@ LFact
 
 
 
-pdfTeX warning: pdflatex (file ./images/FinPulse12.pdf): PDF inclusion: found P
-DF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex.exe (file ./images/FinPulse12.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
 <images/FinPulse12.pdf, id=127, 794.97pt x 615.25862pt>
 File: images/FinPulse12.pdf Graphic file (type pdf)
 <use images/FinPulse12.pdf>
 Package pdftex.def Info: images/FinPulse12.pdf  used on input line 229.
 (pdftex.def)             Requested size: 418.25368pt x 323.71033pt.
 [18] [19 <./images/FinPulse12.pdf>]
-<images/sequenceeee.png, id=179, 2173.11874pt x 1161.33875pt>
+<images/inscription.pdf, id=179, 429.605pt x 328.22626pt>
+File: images/inscription.pdf Graphic file (type pdf)
+<use images/inscription.pdf>
+Package pdftex.def Info: images/inscription.pdf  used on input line 240.
+(pdftex.def)             Requested size: 334.60422pt x 255.64984pt.
+<images/connexion.pdf, id=180, 604.2575pt x 606.265pt>
+File: images/connexion.pdf Graphic file (type pdf)
+<use images/connexion.pdf>
+Package pdftex.def Info: images/connexion.pdf  used on input line 247.
+(pdftex.def)             Requested size: 418.25368pt x 419.64618pt.
+ [20 <./images/inscription.pdf>] [21 <./images/connexion.pdf>]
+<images/sequenceeee.png, id=195, 2173.11874pt x 1161.33875pt>
 File: images/sequenceeee.png Graphic file (type png)
 <use images/sequenceeee.png>
-Package pdftex.def Info: images/sequenceeee.png  used on input line 240.
+Package pdftex.def Info: images/sequenceeee.png  used on input line 256.
 (pdftex.def)             Requested size: 418.25368pt x 223.50966pt.
- [20 <./images/sequenceeee.png (PNG copy)>]
-[21]
-Overfull \hbox (39.72923pt too wide) in paragraph at lines 272--273
+ [22 <./images/sequenceeee.png (PNG copy)>]
+<images/seq23.pdf, id=199, 2320.67pt x 1310.8975pt>
+File: images/seq23.pdf Graphic file (type pdf)
+<use images/seq23.pdf>
+Package pdftex.def Info: images/seq23.pdf  used on input line 289.
+(pdftex.def)             Requested size: 418.25368pt x 236.2514pt.
+ [23] [24 <./images/seq23.pdf>] [25]
+Overfull \hbox (39.72923pt too wide) in paragraph at lines 322--323
 []\T1/lmr/m/n/12 FinPulse in-tègre deux briques lo-gi-cielles com-plé-men-taire
 s en ar-chi-tec-ture microservices-
  []
 
-<images/thisoneeeee.png, id=186, 1413.28pt x 770.88pt>
+[26]
+<images/thisoneeeee.png, id=220, 1413.28pt x 770.88pt>
 File: images/thisoneeeee.png Graphic file (type png)
 <use images/thisoneeeee.png>
-Package pdftex.def Info: images/thisoneeeee.png  used on input line 314.
+Package pdftex.def Info: images/thisoneeeee.png  used on input line 364.
 (pdftex.def)             Requested size: 418.25368pt x 228.13692pt.
-[22] [23 <./images/thisoneeeee.png>]
-Overfull \hbox (1.9147pt too wide) in paragraph at lines 352--353
+ [27 <./images/thisoneeeee.png>] [28]
+Overfull \hbox (1.9147pt too wide) in paragraph at lines 402--403
 []\T1/lmr/bx/n/12 Async Pro-ces-sing (Ce-lery) \T1/lmr/m/n/12 : In-ges-tion non
 -bloquante et trai-te-ment batch
  []
 
 
-Overfull \hbox (10.13152pt too wide) in paragraph at lines 354--355
+Overfull \hbox (10.13152pt too wide) in paragraph at lines 404--405
 []\T1/lmr/bx/n/12 Connection Poo-ling \T1/lmr/m/n/12 : Post-greSQL et Re-dis ut
 i-lisent des pools de connexions
  []
 
-[24]) (Conclusion.tex [25] [26
+[29]) (sections/Implementation.tex [30]
+Chapitre 3.
+[31
 
-]) [27] (main.aux)
+] [32] [33]
+Overfull \hbox (7.5314pt too wide) in paragraph at lines 132--133
+[]\T1/lmr/m/n/12 [Insérer Fi-gure 3 : Lan-ding page Fin-Pulse AI ^^V Sec-tion h
+éro avec mini-dashboard
+ []
+
+[34] [35]) (Conclusion.tex [36] [37
+
+]) (Bibliographie.tex [38] [39
+
+]
+Underfull \hbox (badness 1490) in paragraph at lines 48--51
+[]\T1/lmr/m/n/12 FastAPI, \T1/lmr/m/it/12 Fas-tAPI Do-cu-men-ta-tion\T1/lmr/m/n
+/12 . Dis-po-nible sur : $\T1/lmtt/m/n/12 https : / / fastapi .
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 73--76
+[]\T1/lmr/m/n/12 Keycloak, \T1/lmr/m/it/12 Key-cloak Do-cu-men-ta-tion\T1/lmr/m
+/n/12 . Dis-po-nible sur : $\T1/lmtt/m/n/12 https : / / www .
+ []
+
+[40
+
+]) [41] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5002 strings out of 467871
- 85978 string characters out of 5419828
- 514224 words of memory out of 5000000
- 33790 multiletter control sequences out of 15000+600000
+ 5146 strings out of 467871
+ 88604 string characters out of 5419828
+ 515536 words of memory out of 5000000
+ 33924 multiletter control sequences out of 15000+600000
  689774 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,864b,385s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,10n,65p,1754b,385s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><
 C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/U
 sers/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Use
@@ -577,9 +624,9 @@ Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/pc/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/pc/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/pc/AppData/Local/Programs/M
 iKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (28 pages, 2079287 bytes).
+Output written on main.pdf (42 pages, 2135582 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
+ 330 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
